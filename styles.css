@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   margin: 0;
   padding: 0; }
 
@@ -33,6 +34,10 @@ a {
     align-items: center;
     width: 940px;
     max-width: 940px; }
+    @media only screen and (max-width: 939px) {
+      .header__block {
+        width: 620px;
+        max-width: 620px; } }
   .header__link {
     color: #fff;
     font-size: 12px;
@@ -43,7 +48,8 @@ a {
     margin-left: 10px; }
     .header__button--big {
       padding-top: 3px;
-      padding-bottom: 3px; }
+      padding-bottom: 3px;
+      margin-right: 1px; }
 
 .main {
   margin: 0;
@@ -52,8 +58,15 @@ a {
   .main__block {
     width: 940px;
     display: block; }
+    @media only screen and (max-width: 939px) {
+      .main__block {
+        width: 620px;
+        max-width: 620px; } }
     .main__block__articleVideos {
       display: flex; }
+      @media only screen and (max-width: 939px) {
+        .main__block__articleVideos {
+          display: block; } }
 
 .nav {
   width: inherit;
@@ -116,6 +129,11 @@ a {
 .videos {
   margin-left: 20px;
   width: 300px; }
+  @media only screen and (max-width: 939px) {
+    .videos {
+      width: 620px;
+      max-width: 620px;
+      margin-left: 0; } }
   .videos__heading {
     position: relative;
     line-height: 18px;
@@ -126,9 +144,15 @@ a {
     font-size: 18;
     font-weight: bold;
     color: #6a0099; }
+    @media only screen and (max-width: 939px) {
+      .videos__heading {
+        text-align: left; } }
     .videos__heading > span {
       display: inline-block;
       vertical-align: middle; }
+      @media only screen and (max-width: 939px) {
+        .videos__heading > span {
+          display: block; } }
     .videos__heading:before {
       content: "";
       position: relative;
@@ -139,6 +163,11 @@ a {
       background: #333333;
       margin-left: -100%;
       left: -2px; }
+      @media only screen and (max-width: 939px) {
+        .videos__heading:before {
+          width: 0;
+          left: 0;
+          margin-left: 0; } }
     .videos__heading:after {
       content: "";
       position: relative;
@@ -149,31 +178,58 @@ a {
       background: #333333;
       margin-right: -100%;
       right: -2px; }
+      @media only screen and (max-width: 939px) {
+        .videos__heading:after {
+          vertical-align: center; } }
+  @media only screen and (max-width: 939px) {
+    .videos__content {
+      display: flex;
+      justify-content: space-between; } }
   .videos__item {
     position: relative;
     overflow: hidden;
     margin-top: 10px;
     height: 90px; }
+    @media only screen and (max-width: 939px) {
+      .videos__item {
+        width: 120px;
+        height: 140px; } }
     .videos__item__img {
       float: left;
       width: 140px;
       margin-right: 10px; }
+      @media only screen and (max-width: 939px) {
+        .videos__item__img {
+          width: 120px;
+          height: auto; } }
     .videos__item__text {
       color: #333333;
       font-size: 14px;
       font-family: "PT Sans";
       font-weight: bold; }
+      @media only screen and (max-width: 939px) {
+        .videos__item__text {
+          margin-top: 80px;
+          height: 54px;
+          overflow: hidden; } }
     .videos__item__icon {
       position: absolute;
       width: 24px;
       height: 19px;
       left: 3px;
       bottom: 4px; }
+      @media only screen and (max-width: 939px) {
+        .videos__item__icon {
+          top: 4px; } }
   .videos__more {
     margin-top: 20px;
     font-size: 18px;
     line-height: 18px;
     font-family: "PT Sans"; }
+    @media only screen and (max-width: 939px) {
+      .videos__more {
+        text-align: right;
+        margin-top: 5px; } }
   .videos__hr {
     background-color: #333333;
     border: 0;
@@ -181,10 +237,17 @@ a {
     height: 5px;
     margin-top: 5px;
     color: #333333; }
+    @media only screen and (max-width: 939px) {
+      .videos__hr {
+        margin-bottom: 30px;
+        height: 0; } }
 
 .articleAndOMG {
   width: 620px;
   display: block; }
+  @media only screen and (max-width: 939px) {
+    .articleAndOMG {
+      width: 620px; } }
 
 .omg {
   width: inherit; }
@@ -210,6 +273,10 @@ a {
     margin-top: 10px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 939px) {
+      .omg__content {
+        height: 200px;
+        justify-content: space-around; } }
   .omg__item {
     width: 140px;
     display: block;
@@ -220,6 +287,10 @@ a {
       width: 140px;
       border: 1px gray solid;
       margin-bottom: 4px; }
+    .omg__item__text {
+      height: 72px;
+      max-height: 72px;
+      overflow: hidden; }
 
 .misc {
   display: block; }
@@ -263,13 +334,15 @@ a {
       color: #3d76cc;
       font-size: 14px;
       font-family: "PT Sans"; }
-    .misc__item__img {
+    .misc__item > img {
       width: 140px;
-      margin-bottom: 5px;
       margin-bottom: 4px; }
     .misc__item--first {
       width: 60px;
       margin: 0; }
+      @media only screen and (max-width: 939px) {
+        .misc__item--first {
+          width: 40px; } }
       .misc__item--first > .icon {
         margin-top: 30px;
         margin-right: 25px;
@@ -277,8 +350,14 @@ a {
         background-image: url("./images/arrows-big.png");
         width: 20px;
         height: 40px; }
+        @media only screen and (max-width: 939px) {
+          .misc__item--first > .icon {
+            margin-left: 10px; } }
     .misc__item--last {
       opacity: 0.5; }
+    @media only screen and (max-width: 939px) {
+      .misc__item--smallScreenLast {
+        opacity: 0.5; } }
   .misc__rightArrow {
     background-position: -20px 0;
     position: absolute;
@@ -307,6 +386,10 @@ a {
   .footer__textBlock {
     width: 940px;
     display: block; }
+    @media only screen and (max-width: 939px) {
+      .footer__textBlock {
+        width: 620px;
+        max-width: 620px; } }
   .footer__copy {
     margin-top: 25px;
     font-size: 12px;
