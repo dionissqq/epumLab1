@@ -1,0 +1,367 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+a { 
+    text-decoration: none;
+    color: rgb(61,118,204);
+    &:visited{
+        color: rgb(61,118,204);
+    }
+} 
+.hr1{
+    display: block;
+    background-color: rgb(51,51,51);
+    border: 0;
+    height: 3px;
+    margin:0;
+    color:rgb(51,51,51);
+    width:inherit;
+    margin-bottom: 30px;
+}
+.header{
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 940px;
+        max-width: 940px;
+    }
+    &__link{
+        color: #fff;
+        font-size: 12px;
+        margin-right:20px;
+        font-family: 'PT Sans';
+    }
+    &__button{
+        display:inline-block;
+        margin-left: 10px;
+        &--big{
+            padding-top:3px;
+            padding-bottom:3px;
+        }
+    }
+}
+.main{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    &__block{
+        width: 940px;
+        display: block;
+        &__articleVideos{
+            display:flex;
+        }
+    }
+}
+.nav{
+    width:inherit;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    &__items{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__item{
+        font-size: 18px;
+        color:rgb(51,51,51);
+        font-family: 'PT Sans';
+        margin-left:15;
+        &--first{
+            margin-left:10px;
+            margin-right: 5px;
+        }
+    }
+    &__button{
+        display:flex;
+        float: right;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+.bigArticle{
+    display:block;
+    position:relative;
+    width:620px;
+    height: 255px;
+    background-color: rgb(247,249,250);
+    border-bottom:red 5px solid;
+    overflow: hidden;
+    box-sizing: border-box;
+        >img{
+            float:left;
+            width:380px;
+            margin-right:20px;
+        }
+        &__text{
+            margin-top:15px;
+            &--heading{
+                color:rgb(200,0,0);
+                font-size: 30px;
+                font-family: "PT Serif";
+            }
+            &--small{
+                margin-top:5px;
+                color:rgb(51,51,51);
+                font-size: 14px;
+                font-family: "PT Sans",sans-serif;
+            }
+        }
+        &__counter{
+            position: absolute;
+            display:flex;
+            right:10px;
+            bottom:10px;
+            font-family: "PT Sans";
+            font-size: 18;
+            font-weight: bold;
+        }
+}
+.videos{
+    margin-left:20px;
+    width:300px;
+    &__heading{
+        position: relative;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        font-family: "PT Sans";
+        font-size: 18;
+        font-weight: bold;
+        color:rgb(106,0,153);
+        > span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:before{
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            vertical-align: middle;
+            background:  rgb(51,51,51);
+            margin-left: -100%;
+            left: -2px;
+        }
+        &:after{
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            vertical-align: middle;
+            background:  rgb(51,51,51);;
+            margin-right: -100%;
+            right: -2px;
+        }
+    }
+    &__item{
+        position: relative;
+        overflow:hidden;
+        margin-top:10px;
+        height: 90px;
+        &__img{
+            float:left;
+            width:140px;
+            margin-right:10px;
+        }
+        &__text{
+            color:rgb(51,51,51);
+            font-size: 14px;
+            font-family: "PT Sans";
+            font-weight: bold;
+        }
+        &__icon{
+            position: absolute;
+            width:24px;
+            height: 19px;
+            left: 3px;
+            bottom: 4px;
+        }
+    }
+    &__more{
+        margin-top:20px ;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: "PT Sans";
+    }
+    &__hr{
+        background-color: rgb(51,51,51);
+        border: 0;
+        margin:0;
+        height: 5px;
+        margin-top:5px;
+        color:rgb(51,51,51);
+    }
+}
+.articleAndOMG{
+    width:620px;
+    display: block;
+}
+.omg{
+    width:inherit;
+    &__heading{
+        overflow: hidden;
+        color:rgb(51,51,51);
+        font-size: 24px;
+        line-height: 20px;
+        margin-top:30px;
+        font-family: "PT Sans";
+        &:after{
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background:rgb(51,51,51);
+            margin-right: -100%;
+            right: -2px;
+        }
+    }
+    &__content{
+        height: 280px;
+        overflow: hidden;
+        margin-top: 10px;
+        display:flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width:140px;
+        display:block;
+        color:rgb(51,51,51);
+        font-size: 14px;
+        font-family: "PT Sans";
+        >img{
+            width:140px;
+            border: 1px gray solid;
+            margin-bottom: 4px;
+        }
+    }
+}
+.misc{
+    display:block;
+    &__heading{
+        overflow: hidden;
+        color:rgb(51,51,51);
+        font-size: 24px;
+        line-height: 20px;
+        font-family: "PT Sans";
+        &:after{
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 3px;
+            background: rgb(51,51,51);
+            margin-right: -100%;
+            right: -2px;
+        }
+    }
+    &__content{
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+        display:flex;
+        justify-content:flex-start;
+    }
+    &__item{
+        width:140px;
+        display:block;
+        margin-left: 20px;
+        position: relative;
+        &__heading{
+            height: 30px;
+            display:flex;
+            align-items: center;
+            vertical-align: middle;
+            color:rgb(199,0,0);
+            font-size: 14px;
+            font-family: "PT Sans";
+        }
+        &__nadpis{
+            margin-top: 4px;
+            height: 70px;
+            color:rgb(61,118,204);
+            font-size: 14px;
+            font-family: "PT Sans";
+        }
+        &__img{
+            width:140px;
+            margin-bottom: 5px;
+            margin-bottom: 4px;
+        }
+        &--first{
+            width:60px;
+            margin:0;
+            >.icon{
+                margin-top:30px;
+                margin-right:25px ;
+                margin-left:15px;
+                background-image:url("./images/arrows-big.png");
+                width:20px;
+                height: 40px;
+            }
+
+        }
+        &--last{
+            opacity:0.5;
+        }
+    }
+    &__rightArrow{
+        background-position:-20px 0;
+        position: absolute;
+        right: 20px;
+        margin-top:60px;
+        background-image:url("./images/arrows-big.png");
+        width:20px;
+        height: 40px;
+    }   
+}
+.poloska{
+    height: 2px;
+    color:black; 
+    background-color:rgb(51,51,51);
+    border:none;
+    margin:0;
+    padding:0;
+}
+.footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    background-color: rgb(247,249,250);
+    width:100%;
+    border-top: gray 1px solid;
+    &__textBlock{
+        width: 940px;
+        display: block;
+    }
+    &__copy{
+        margin-top: 25px;
+        font-size: 12px;
+        font-family: "PT Sans";
+    }
+    &__links{
+        margin-top: 20px;
+        font-size: 12px;
+        color:rgb(86,122,176);
+        font-family: "PT Sans";
+    }
+}
