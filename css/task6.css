@@ -1,0 +1,20 @@
+.row{
+    width:25%;
+}
+.midrow{
+    width:50%;
+}
+.row .image,.midrow .image{
+    width:100%;
+}
+.column{
+    display: flex;
+}
+.column .image{
+    width:50%;
+}
+.main{
+    width:88%;
+    margin:6% ;
+    display:flex;
+}

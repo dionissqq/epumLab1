@@ -1,0 +1,46 @@
+.main_article{
+    width:15%;
+    padding: 1rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    display: inline-block;
+
+}
+.main_article>p{
+    background-color: ivory;
+    margin: .5rem;
+    padding: .7rem;
+    font-size: 1.1rem;
+}
+.main_article>h2{
+    background-color: ivory;
+    margin: .4rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+.aside_class{
+    width: max-content;
+    margin-left: 4%;
+
+    border: 1px solid lightgreen;
+    font-size: 1.3em;
+    display: inline-block;
+}
+footer,header{
+    width:100%;
+    background-color: black;
+    position: absolute;
+    left:0;
+    text-align: center;
+    color: white;
+}
+header{
+    top:0;
+}
+.myTemplate {
+    color: white;
+    background-color: DodgerBlue;
+    padding: 4px;
+    text-align: center;
+    margin: 4px;
+  }
